@@ -26,11 +26,17 @@
             font-weight: bold;
         }
 
-        .carousel-caption {
-            top: 50%;
-            transform: translateY(-50%);
-            display: block !important;
-        }
+       .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    background: rgba(255, 255, 255, 0.5); /* translucent white */
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
 
         .carousel-caption h1 {
             color:rgb(0, 1, 4);
@@ -139,6 +145,7 @@
                 font-size: 2rem;
             }
         }
+        
     </style>
 </head>
 
@@ -250,7 +257,7 @@
 
     <!-- Carousel -->
     <!-- Carousel -->
-<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="./ChatGPT Image Jul 11, 2025, 08_59_29 PM.png" class="d-block w-100" alt="Mattress 1">
@@ -409,6 +416,78 @@
       incredible support free from synthetic blends.
     </p>
   </div>
+
+  
+
+   <div class="material-card cotton">
+    <h2>Cotton</h2>
+    <p>
+      Cotton is highly absorbent and naturally breathable. It wicks away
+      moisture to preserve your comfort throughout the night.
+    </p>
+  </div>
+
+  <div class="material-card wool">
+    <h2>Wool</h2>
+    <p>
+      Wool wicks away moisture and is naturally antimicrobial, allows air
+      circulation for a cooler, fresher mattress.
+    </p>
+  </div>
+
+  <div class="material-card steel">
+    <h2>Steel Coil Core</h2>
+    <p>
+      As used in the best mattresses around the world, coil spring core
+      silently flexes & adapts to your body contours.
+    </p>
+  </div>
+
+  <div class="material-card latex">
+    <h2>Natural Latex</h2>
+    <p>
+      100% Natural Belgian Latex is breathable, long lasting & provides
+      incredible support free from synthetic blends.
+    </p>
+  </div>
+
+
+   <div class="material-card cotton">
+    <h2>Cotton</h2>
+    <p>
+      Cotton is highly absorbent and naturally breathable. It wicks away
+      moisture to preserve your comfort throughout the night.
+    </p>
+  </div>
+
+  <div class="material-card wool">
+    <h2>Wool</h2>
+    <p>
+      Wool wicks away moisture and is naturally antimicrobial, allows air
+      circulation for a cooler, fresher mattress.
+    </p>
+  </div>
+
+  <div class="material-card steel">
+    <h2>Steel Coil Core</h2>
+    <p>
+      As used in the best mattresses around the world, coil spring core
+      silently flexes & adapts to your body contours.
+    </p>
+  </div>
+
+  <div class="material-card latex">
+    <h2>Natural Latex</h2>
+    <p>
+      100% Natural Belgian Latex is breathable, long lasting & provides
+      incredible support free from synthetic blends.
+    </p>
+  </div>
+
+ 
+
+
+
 </section>
 <style>
     .materials-section {
@@ -508,6 +587,10 @@
  <div id="products"></div>
 <section class="container py-5">
   <h2 class="text-center fw-bold mb-5">Our Products</h2>
+
+
+
+  
 
   <div class="row g-4 justify-content-center">
     <!-- Repeat for each product -->
@@ -620,6 +703,10 @@
     }
   }
 </style>
+
+
+
+
 
 <div id="footer"></div>
 <footer class="footer-dark">
@@ -734,6 +821,54 @@
 .footer-bottom-text {
   font-size: 0.9rem;
   color: #777;
+}
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+
+/* HEADINGS */
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* 📱 Mobile View (Left Align & Move Up Slightly) */
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 30%; /* move up */
+    left: 5%;
+    right: auto;
+    transform: translateY(-30%);
+    text-align: left; /* left-align text */
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
 }
 
 </style>
