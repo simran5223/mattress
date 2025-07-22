@@ -38,17 +38,47 @@
 }
 
 
-        .carousel-caption h1 {
-            color:rgb(0, 1, 4);
-            font-weight: 50px;
-            font-size: 3.25rem;
-        }
+       .carousel-caption h1 {
+    color: rgb(0, 1, 4);
+    font-size: 3.25rem;
+    font-weight: bold;
+}
 
-        .carousel-caption p {
-            color:rgb(0, 2, 10);
-            font-size: 2.10rem;
-            font-weight: bold;
-        }
+.carousel-caption p {
+    color: rgb(0, 2, 10);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* 🔽 Mobile-specific styling */
+@media (max-width: 768px) {
+    .carousel-caption {
+        padding: 0.75rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.7); /* Slightly more visible on mobile */
+  }
+}
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.7);  /* already present */
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    display: inline-block;
+    max-width: 90%;
+    height: 50%; /* 👈 Force content height */
+}
+
 
         .carousel-inner {
             width: 100%;
@@ -135,6 +165,13 @@
             width: 24px;
             height: 24px;
         }
+        @media (max-width: 768px) {
+  .carousel-inner img {
+    height: 400px !important;
+    object-fit: cover;
+  }
+}
+
 
         @media (max-width: 768px) {
             .opening-box {
@@ -267,14 +304,14 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="./image 2.jpeg" class="d-block w-100" alt="Mattress 2">
+            <img src="./home22.jpg" class="d-block w-100" alt="Mattress 2">
             <div class="carousel-caption">
                 <h1>Manisha foam</h1>
                 <p>Comfort Redefined – Sleep Like Never Before</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="./image2.jpeg" class="d-block w-100" alt="Mattress 3">
+            <img src="./image2.jpeg" class="d-block w-100"alt="Mattress 3">
             <div class="carousel-caption">
                 <h1>Manisha foam</h1>
                 <p>Comfort Redefined – Sleep Like Never Before</p>
@@ -419,70 +456,6 @@
 
   
 
-   <div class="material-card cotton">
-    <h2>Cotton</h2>
-    <p>
-      Cotton is highly absorbent and naturally breathable. It wicks away
-      moisture to preserve your comfort throughout the night.
-    </p>
-  </div>
-
-  <div class="material-card wool">
-    <h2>Wool</h2>
-    <p>
-      Wool wicks away moisture and is naturally antimicrobial, allows air
-      circulation for a cooler, fresher mattress.
-    </p>
-  </div>
-
-  <div class="material-card steel">
-    <h2>Steel Coil Core</h2>
-    <p>
-      As used in the best mattresses around the world, coil spring core
-      silently flexes & adapts to your body contours.
-    </p>
-  </div>
-
-  <div class="material-card latex">
-    <h2>Natural Latex</h2>
-    <p>
-      100% Natural Belgian Latex is breathable, long lasting & provides
-      incredible support free from synthetic blends.
-    </p>
-  </div>
-
-
-   <div class="material-card cotton">
-    <h2>Cotton</h2>
-    <p>
-      Cotton is highly absorbent and naturally breathable. It wicks away
-      moisture to preserve your comfort throughout the night.
-    </p>
-  </div>
-
-  <div class="material-card wool">
-    <h2>Wool</h2>
-    <p>
-      Wool wicks away moisture and is naturally antimicrobial, allows air
-      circulation for a cooler, fresher mattress.
-    </p>
-  </div>
-
-  <div class="material-card steel">
-    <h2>Steel Coil Core</h2>
-    <p>
-      As used in the best mattresses around the world, coil spring core
-      silently flexes & adapts to your body contours.
-    </p>
-  </div>
-
-  <div class="material-card latex">
-    <h2>Natural Latex</h2>
-    <p>
-      100% Natural Belgian Latex is breathable, long lasting & provides
-      incredible support free from synthetic blends.
-    </p>
-  </div>
 
  
 
@@ -583,82 +556,113 @@
 
 </style>
 
-<!-- OUR PRODUCTS SECTION -->
- <div id="products"></div>
+<div id="products"></div>
 <section class="container py-5">
   <h2 class="text-center fw-bold mb-5">Our Products</h2>
 
-
-
-  
-
   <div class="row g-4 justify-content-center">
-    <!-- Repeat for each product -->
+    
+    <!-- Product 1 -->
     <div class="col-12 col-md-6 col-lg-6">
       <div class="product-box">
         <div class="product-image">
-          <img src="./matress.jpg" alt="Wallpaper">
+          <img src="./matress.jpg" alt="Mattress">
         </div>
-        <h5>Matress</h5>
+        <h5>Mattress</h5>
+        <ul class="product-features">
+          <li>High-density foam</li>
+          <li>Orthopedic support</li>
+          <li>Available in all sizes</li>
+        </ul>
       </div>
     </div>
 
+    <!-- Product 2 -->
     <div class="col-12 col-md-6 col-lg-6">
       <div class="product-box">
         <div class="product-image">
           <img src="./curtain.jpg" alt="Curtains">
         </div>
         <h5>Curtains</h5>
+        <ul class="product-features">
+          <li>Blackout & Sheer styles</li>
+          <li>Custom stitching available</li>
+          <li>Elegant fabric choices</li>
+        </ul>
       </div>
     </div>
 
-
+    <!-- Product 3 -->
     <div class="col-12 col-md-6 col-lg-6">
       <div class="product-box">
         <div class="product-image">
-          <img src="bedsheet.jpg" alt="Curtains">
+          <img src="bedsheet.jpg" alt="Bedsheet">
         </div>
         <h5>Bedsheet</h5>
+        <ul class="product-features">
+          <li>100% Cotton fabric</li>
+          <li>Vibrant color range</li>
+          <li>Fade-resistant print</li>
+        </ul>
       </div>
     </div>
 
+    <!-- Product 4 -->
     <div class="col-12 col-md-6 col-lg-6">
       <div class="product-box">
         <div class="product-image">
-          <img src="pillow.jpg" alt="Curtains">
+          <img src="pillow.jpg" alt="Pillows">
         </div>
         <h5>Pillows</h5>
+        <ul class="product-features">
+          <li>Soft microfiber filling</li>
+          <li>Hypoallergenic material</li>
+          <li>Washable covers</li>
+        </ul>
       </div>
     </div>
 
+    <!-- Product 5 -->
     <div class="col-12 col-md-6 col-lg-6">
       <div class="product-box">
         <div class="product-image">
-          <img src="./blinds.jpg" alt="Curtains">
+          <img src="./blinds.jpg" alt="Blinds">
         </div>
         <h5>Blinds</h5>
+        <ul class="product-features">
+          <li>Manual & Motorized options</li>
+          <li>UV protection coating</li>
+          <li>Perfect for all windows</li>
+        </ul>
       </div>
     </div>
 
+    <!-- Product 6 -->
     <div class="col-12 col-md-6 col-lg-6">
       <div class="product-box">
         <div class="product-image">
-          <img src="./blanket.jpg" alt="Curtains">
+          <img src="./blanket.jpg" alt="Blankets">
         </div>
         <h5>Blankets</h5>
+        <ul class="product-features">
+          <li>Warm and lightweight</li>
+          <li>Available in prints & solids</li>
+          <li>All-season comfort</li>
+        </ul>
       </div>
     </div>
-    <!-- Add 4 more products in same structure -->
+
+    <!-- You can add more products below using same structure -->
   </div>
 </section>
 
 <!-- STYLING -->
 <style>
-    @media (max-width: 576px) {
-  .materials-section {
-    grid-template-columns: 1fr;
+  @media (max-width: 576px) {
+    .materials-section {
+      grid-template-columns: 1fr;
+    }
   }
-}
 
   .product-box {
     background: #fff;
@@ -669,7 +673,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     transition: transform 0.3s;
     padding-bottom: 1rem;
   }
@@ -697,12 +701,319 @@
     font-size: 1.2rem;
   }
 
+  .product-features {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 10px 20px 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  .product-features li {
+    margin-bottom: 4px;
+  }
+
   @media (max-width: 767px) {
     .product-image {
       height: 250px;
     }
   }
 </style>
+
+ <section class="container my-5" id="mattress-tabs">
+  <h2 class="text-center fw-bold mb-4">Mattress Zones</h2>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs justify-content-center mb-4" id="mattressTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="bonded-tab" data-bs-toggle="tab" data-bs-target="#bonded" type="button" role="tab">Bonded</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="coir-tab" data-bs-toggle="tab" data-bs-target="#coir" type="button" role="tab">Coir</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="foam-tab" data-bs-toggle="tab" data-bs-target="#foam" type="button" role="tab">Foam</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="spring-tab" data-bs-toggle="tab" data-bs-target="#spring" type="button" role="tab">Spring</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="memory-tab" data-bs-toggle="tab" data-bs-target="#memory" type="button" role="tab">Memory</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content" id="mattressTabContent">
+    <!-- Bonded -->
+    <div class="tab-pane fade show active" id="bonded" role="tabpanel">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3 text-center">
+          <img src="./ChatGPT Image Jul 19, 2025, 09_00_07 PM.png" alt="Bonded Mattress" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Bonded Mattress</h4>
+          <p>Bonded mattress is exclusively designed to provide firm support to your spine. It provides long-lasting relief from back aches and spine problems.</p>
+          <ul>
+            <li>✔️ Premium Quilted Fabric</li>
+            <li>✔️ PU Foam</li>
+            <li>✔️ HDPE Sheet</li>
+            <li>✔️ Bonded Foam</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coir -->
+    <div class="tab-pane fade" id="coir" role="tabpanel">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3 text-center">
+          <img src="./ChatGPT Image Jul 21, 2025, 03_41_40 PM.png" alt="Coir Mattress" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Coir Mattress</h4>
+          <p>Coir mattresses are eco-friendly and provide excellent ventilation. Perfect for those who prefer firm surfaces with natural materials.</p>
+          <ul>
+            <li>✔️ Natural Coir</li>
+            <li>✔️ Breathable Material</li>
+            <li>✔️ Anti-fungal Properties</li>
+            <li>✔️ Durable Base</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Foam -->
+    <div class="tab-pane fade" id="foam" role="tabpanel">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3 text-center">
+          <img src="./ChatGPT Image Jul 21, 2025, 03_49_07 PM.png" alt="Foam Mattress" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Foam Mattress</h4>
+          <p>Foam mattresses offer great support and body contouring. Ideal for pressure relief and a soft feel throughout the night.</p>
+          <ul>
+            <li>✔️ High-Density Foam</li>
+            <li>✔️ Lightweight & Durable</li>
+            <li>✔️ No Motion Transfer</li>
+            <li>✔️ Anti-Allergic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spring -->
+    <div class="tab-pane fade" id="spring" role="tabpanel">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3 text-center">
+          <img src="./ChatGPT Image Jul 21, 2025, 04_04_55 PM.png" alt="Spring Mattress" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Spring Mattress</h4>
+          <p>Spring mattresses are known for bounce and breathability. Engineered with pocket or bonnell springs to enhance comfort.</p>
+          <ul>
+            <li>✔️ Pocket/Bonnell Springs</li>
+            <li>✔️ Ventilated Structure</li>
+            <li>✔️ Responsive Support</li>
+            <li>✔️ Great for Couples</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Memory -->
+    <div class="tab-pane fade" id="memory" role="tabpanel">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-3 text-center">
+          <img src="./mattress zone.jpeg" alt="Memory Foam Mattress" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Memory Foam Mattress</h4>
+          <p>Memory foam molds to your body, relieving pressure and offering superior comfort. Best for people with joint or spine issues.</p>
+          <ul>
+            <li>✔️ Orthopedic Support</li>
+            <li>✔️ Zero Motion Disturbance</li>
+            <li>✔️ Body Contouring</li>
+            <li>✔️ Luxurious Feel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  #bonded img, #coir img, #foam img, #spring img, #memory img {
+  max-height: 320px;
+  object-fit: contain;
+}
+
+#bonded ul, #coir ul, #foam ul, #spring ul, #memory ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#bonded ul li, #coir ul li, #foam ul li, #spring ul li, #memory ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+</style>
+
+
+<!-- Custom Banner Section -->
+<section class="custom-banner">
+  <div class="custom-banner-content">
+    <h2>Smart Ortho Hybrid Mattress</h2>
+    <p>
+      Made using special foam with specific construction techniques that cause the mattress to form the shape of the body
+    </p>
+   
+  </div>
+</section>
+<style>
+  .custom-banner {
+  background-image: url('./ChatGPT\ Image\ Jul\ 20\,\ 2025\,\ 02_47_22\ PM.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  color: white;
+}
+
+.custom-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.custom-banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.custom-banner-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.custom-banner-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .custom-banner {
+    height: 70vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .custom-banner-content h2 {
+    font-size: 2rem;
+  }
+
+  .custom-banner-content p {
+    font-size: 1rem;
+  }
+}
+
+</style>
+
+
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+<!-- CERTIFICATES & AWARDS SECTION -->
+<section id="certificates-awards" class="py-5" style="background-color: #f9f9f9;">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Certificates & Awards</h2>
+
+    <!-- Certificates Row -->
+    <div class="row justify-content-center mb-5 text-center">
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="certificate-box bg-white shadow-sm p-4 rounded">
+          <img src="iso certified.jpeg" alt="ISO Certified" class="img-fluid mb-3" style="max-height: 100px;">
+          <h5>ISO Certified</h5>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="certificate-box bg-white shadow-sm p-4 rounded">
+          <img src="who certified.jpeg" alt="WHO-GMP Certified" class="img-fluid mb-3" style="max-height: 100px;">
+          <h5>WHO-GMP Certified</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Awards Row -->
+   <section class="container py-5">
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="award-box custom-shadow text-center p-4 rounded bg-white h-100">
+        <img src="./certificate 1.jpeg" alt="Jewels of Punjab" class="award-img mb-3">
+        <h6 class="fw-bold mb-1">Jewels of Punjab</h6>
+        <p class="small mb-0">By Shri Nitin Gadkari (Road & Transport Minister of India)</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="award-box custom-shadow text-center p-4 rounded bg-white h-100">
+        <img src="certificate2.jpeg" alt="Red Achievers Award" class="award-img mb-3">
+        <h6 class="fw-bold mb-1">Red Achievers Award</h6>
+        <p class="small mb-0">By Sunil Shetty (Red FM)</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="award-box custom-shadow text-center p-4 rounded bg-white h-100">
+        <img src="certificate3.jpeg" alt="Noor Punjab Da Award" class="award-img mb-3">
+        <h6 class="fw-bold mb-1">Noor Punjab Da</h6>
+        <p class="small mb-0">By ABP News Group</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div>
+</section>
+
+<!-- 👇 CSS for image and shadow -->
+<style>
+  .award-img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .award-box:hover .award-img {
+    transform: scale(1.05);
+  }
+
+  .custom-shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .custom-shadow:hover {
+    transform: translateY(-6px);
+  }
+</style>
+
+
+
 
 
 
@@ -754,6 +1065,9 @@
     <p class="text-center footer-bottom-text">&copy; 2025 Manisha foam. All rights reserved.</p>
   </div>
 </footer>
+
+
+
 <style>
     .footer-dark {
   background-color: #111;
@@ -763,6 +1077,7 @@
   border-top-right-radius: 20px;
   font-family: 'Segoe UI', sans-serif;
 }
+
 
 .footer-title {
   font-size: 2rem;
